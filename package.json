@@ -1,0 +1,36 @@
+{
+  "private": "true",
+  "main": "index.js",
+  "engines": {
+    "node": ">=11"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "xo",
+    "xo": "xo"
+  },
+  "config": {
+    "tokenpath": "/run/secrets/35c3memoriesbot-token.txt",
+    "tokenpathdebug": "token.txt"
+  },
+  "dependencies": {
+    "telegraf": "^3.25.5"
+  },
+  "devDependencies": {
+    "xo": "^0.23.0"
+  },
+  "xo": {
+    "space": true,
+    "semicolon": false,
+    "overrides": [
+      {
+        "files": [
+          "lib/stickers.js"
+        ],
+        "rules": {
+          "camelcase": "off"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+botfather-settings/botpic.png
+
+# node
+node_modules
+
+# botfiles
+token.txt

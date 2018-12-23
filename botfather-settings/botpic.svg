@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1801" height="1801" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <linearGradient id="myGrad" x2="1754" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#0084b0" offset="0"/>
+   <stop stop-color="#00a356" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient966" x2="1754" gradientUnits="userSpaceOnUse" xlink:href="#myGrad"/>
+ </defs>
+ <rect x=".5" y=".5" width="1800" height="1800" stroke="#000"/>
+ <g transform="translate(23.5,280)" fill="none" font-family="none" font-size="none" font-weight="none" stroke-linecap="none" stroke-miterlimit="10" stroke-width="none" text-anchor="none" style="mix-blend-mode:normal">
+  <g fill="url(#linearGradient966)">
+   <text x="1189.5" y="665.5" font-family="Montserrat" font-size="150px" font-weight="bold" stroke-linecap="butt" stroke-width="1" text-anchor="middle">
+    <tspan x="1189.5" dy="0" fill="url(#linearGradient966)">Sticker</tspan>
+   </text>
+   <path d="m871.5 320.5c0-9.9411 8.0589-18 18-18s18 8.0589 18 18-8.0589 18-18 18-18-8.0589-18-18z"/>
+   <path d="m871.5 170.5c0-9.9411 8.0589-18 18-18s18 8.0589 18 18-8.0589 18-18 18-18-8.0589-18-18z"/>
+   <path d="m871.5 320.5c0-9.9411 8.0589-18 18-18s18 8.0589 18 18-8.0589 18-18 18-18-8.0589-18-18z"/>
+   <path d="m1471.5 920.5c0-9.9411 8.0589-18 18-18s18 8.0589 18 18-8.0589 18-18 18-18-8.0589-18-18z"/>
+  </g>
+  <g fill="none" stroke="url(#linearGradient966)" stroke-linecap="round" stroke-width="12">
+   <path d="m259.5 499.5v-120h60v120z"/>
+   <path d="m289.5 770.5v-271"/>
+   <path d="m289.5 379.5v-209"/>
+   <path d="m223.5 382.5 21 21"/>
+   <path d="m244.5 388.5v15h-15"/>
+   <path d="m223.5 418.5 21 21"/>
+   <path d="m244.5 424.5v15h-15"/>
+   <path d="m289.5 170.5h261"/>
+   <path d="m610.5 170.5h279"/>
+   <path d="m610.5 140.5v60"/>
+   <path d="m550.5 200.5v-60l60 30z"/>
+   <path d="m589.5 125.5 21-21"/>
+   <path d="m595.5 104.5h15v15"/>
+   <path d="m553.5 116.5 21-21"/>
+   <path d="m559.5 95.5h15v15"/>
+   <path d="m889.5 170.5v150"/>
+   <path d="m889.5 320.5h-150"/>
+   <path d="m799.5 825.5h-120"/>
+   <path d="m769.5 783.5h-60"/>
+   <path d="m739.5 320.5v463"/>
+   <path d="m739.5 825.5v95"/>
+   <path d="m1091 950.5h75l-37.5 54z"/>
+   <path d="m1116.5 950.5v-30"/>
+   <path d="m1140.5 950.5v-30"/>
+   <path d="m739.5 920.5h371"/>
+   <path d="m1146.5 920.5h343"/>
+   <path d="m1489.5 920.5v150"/>
+   <path d="m1489.5 1070.5h-629"/>
+   <path d="m800.5 1070.5h-211"/>
+   <path d="m800.5 1100.5v-60"/>
+   <path d="m860.5 1100.5v-60l-60 30z"/>
+   <path d="m821.5 1115.5-21 21"/>
+   <path d="m815.5 1136.5h-15v-15"/>
+   <path d="m857.5 1124.5-21 21"/>
+   <path d="m851.5 1145.5h-15v-15"/>
+   <path d="m589.5 1016.5 30-15-60-30 60-30-60-30 60-30-30-15"/>
+   <path d="m589.5 1070.5v-54"/>
+   <path d="m589.5 866.5v-96"/>
+   <path d="m477.5 770.5-120 60"/>
+  </g>
+  <path d="m459.5 770.5c0-9.9411 8.0589-18 18-18s18 8.0589 18 18-8.0589 18-18 18-18-8.0589-18-18z" fill="url(#linearGradient966)"/>
+  <path d="m339.5 770.5c0-9.9411 8.0589-18 18-18s18 8.0589 18 18-8.0589 18-18 18-18-8.0589-18-18z" fill="url(#linearGradient966)"/>
+  <path d="m589.5 770.5h-112" fill="none" stroke="url(#linearGradient966)" stroke-linecap="round" stroke-width="12"/>
+  <path d="m357.5 770.5h-68" fill="none" stroke="url(#linearGradient966)" stroke-linecap="round" stroke-width="12"/>
+  <path d="m721.5 619.5c0-9.9411 8.0589-18 18-18s18 8.0589 18 18-8.0589 18-18 18-18-8.0589-18-18z" fill="url(#linearGradient966)"/>
+  <path d="m739.5 619.5h81" fill="none" stroke="url(#linearGradient966)" stroke-linecap="round" stroke-width="12"/>
+  <path d="m820.5 619.5c0-9.9411 8.0589-18 18-18s18 8.0589 18 18-8.0589 18-18 18-18-8.0589-18-18z" fill="none" stroke="url(#linearGradient966)" stroke-linecap="round" stroke-width="12"/>
+  <path d="m271.5 613.5c0-9.9411 8.0589-18 18-18s18 8.0589 18 18-8.0589 18-18 18-18-8.0589-18-18z" fill="url(#linearGradient966)"/>
+  <g fill="none" stroke="url(#linearGradient966)" stroke-linecap="round" stroke-width="12">
+   <path d="m289.5 613.5h-67"/>
+   <path d="m186.5 613.5c0-9.9411 8.0589-18 18-18s18 8.0589 18 18-8.0589 18-18 18-18-8.0589-18-18z"/>
+   <path d="m1489.5 170.5v150"/>
+  </g>
+  <path d="m1471.5 256.5c0-9.9411 8.0589-18 18-18s18 8.0589 18 18-8.0589 18-18 18-18-8.0589-18-18z" fill="url(#linearGradient966)"/>
+  <g fill="none" stroke="url(#linearGradient966)" stroke-linecap="round" stroke-width="12">
+   <path d="m1489.5 256.5h60v69"/>
+   <path d="m1531.5 343.5c0-9.9411 8.0589-18 18-18s18 8.0589 18 18-8.0589 18-18 18-18-8.0589-18-18z"/>
+   <path d="m1298.5 380.5v-120"/>
+   <path d="m1256.5 350.5v-60"/>
+   <path d="m1489.5 320.5h-191"/>
+   <path d="m1256.5 320.5h-367"/>
+  </g>
+  <path d="m1086.5 320.5c0-9.9411 8.0589-18 18-18s18 8.0589 18 18-8.0589 18-18 18-18-8.0589-18-18z" fill="url(#linearGradient966)"/>
+  <g fill="none" stroke="url(#linearGradient966)" stroke-linecap="round" stroke-width="12">
+   <path d="m1104.5 320.5v107"/>
+   <path d="m1086.5 445.5c0-9.9411 8.0589-18 18-18s18 8.0589 18 18-8.0589 18-18 18-18-8.0589-18-18z"/>
+   <path d="m1101.5 110.5v120"/>
+   <path d="m1143.5 140.5v60"/>
+   <path d="m889.5 170.5h212"/>
+   <path d="m1143.5 170.5h346"/>
+  </g>
+ </g>
+</svg>

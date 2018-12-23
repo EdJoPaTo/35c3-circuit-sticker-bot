@@ -1,0 +1,3 @@
+random - generate a sticker with random text
+settings - adapt your stickerpack
+help - show the help
