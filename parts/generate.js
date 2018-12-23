@@ -23,14 +23,12 @@ function firstAttempt(ctx) {
 }
 
 bot.action('add-sticker', async ctx => {
-  console.log('add-sticker', ctx.callbackQuery)
   const fileId = ctx.callbackQuery.message.document.file_id
 
   await stickers.add(ctx, '👾', fileId)
 
   const result = await stickers.getStickerSet(ctx)
   const lastSticker = result.stickers.slice(-1)[0]
-  console.log(lastSticker)
 
   const stickerMessage = await ctx.replyWithSticker(lastSticker.file_id, Extra.inReplyTo(ctx.callbackQuery.message.message_id))
 
