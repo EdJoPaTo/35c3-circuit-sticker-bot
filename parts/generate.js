@@ -11,8 +11,8 @@ const exec = util.promisify(childProcess.exec)
 
 const bot = new Telegraf.Composer()
 
-bot.command('random', createAndReplyPossibleSticker)
-bot.action('random', createAndReplyPossibleSticker)
+bot.command('random', ctx => createAndReplyPossibleSticker(ctx))
+bot.action('random', ctx => createAndReplyPossibleSticker(ctx))
 
 bot.on('text', ctx => createAndReplyPossibleSticker(ctx, ctx.message.text))
 bot.action(/^text-(.+)$/, ctx => createAndReplyPossibleSticker(ctx, ctx.match[1]))
