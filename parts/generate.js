@@ -15,7 +15,7 @@ bot.command('random', ctx => createAndReplyPossibleSticker(ctx))
 bot.action('random', ctx => createAndReplyPossibleSticker(ctx))
 
 bot.on('text', ctx => createAndReplyPossibleSticker(ctx, ctx.message.text))
-bot.action(/^text-(.+)$/, ctx => createAndReplyPossibleSticker(ctx, ctx.match[1]))
+bot.action(/^text-(.+)$/, ctx => createAndReplyPossibleSticker(ctx, ctx.match[1].replace('\\n', '\n')))
 
 async function createAndReplyPossibleSticker(ctx, text = '') {
   generateStandalone(text)
@@ -23,7 +23,7 @@ async function createAndReplyPossibleSticker(ctx, text = '') {
 
   const extra = Extra.markup(Markup.inlineKeyboard([
     Markup.callbackButton('Try another random', 'random', text !== ''),
-    Markup.callbackButton('Try the same text again', 'text-' + text, text === ''),
+    Markup.callbackButton('Try the same text again', 'text-' + text.replace('\n', '\\n'), text === ''),
     Markup.callbackButton('Add to your sticker set', 'add-sticker')
   ], {
     columns: 1
