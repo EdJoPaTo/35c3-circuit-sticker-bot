@@ -1,25 +1,35 @@
+const util = require('util')
+const childProcess = require('child_process')
+
 const Telegraf = require('telegraf')
 
 const stickers = require('../lib/stickers')
+const {generateStandalone} = require('../lib/memories')
 
 const {Extra, Markup} = Telegraf
+const exec = util.promisify(childProcess.exec)
 
 const bot = new Telegraf.Composer()
 
-bot.command('random', firstAttempt)
+bot.command('random', createAndReplyPossibleSticker)
+bot.action('random', createAndReplyPossibleSticker)
 
-bot.on('text', ctx => ctx.reply('TODO create sticker by given text'))
+bot.on('text', ctx => createAndReplyPossibleSticker(ctx, ctx.message.text))
+bot.action(/^text-(.+)$/, ctx => createAndReplyPossibleSticker(ctx, ctx.match[1]))
 
-function firstAttempt(ctx) {
-  const files = ['base-stickers/1.png', 'base-stickers/2.png']
-
-  const rand = Math.floor(Math.random() * files.length)
+async function createAndReplyPossibleSticker(ctx, text = '') {
+  generateStandalone(text)
+  await exec('inkscape -z -D -w 512 -e "possible-sticker.png" "output.svg"')
 
   const extra = Extra.markup(Markup.inlineKeyboard([
+    Markup.callbackButton('Try another random', 'random', text !== ''),
+    Markup.callbackButton('Try the same text again', 'text-' + text, text === ''),
     Markup.callbackButton('Add to your sticker set', 'add-sticker')
-  ]))
+  ], {
+    columns: 1
+  }))
 
-  return ctx.replyWithDocument({source: files[rand]}, extra)
+  return ctx.replyWithDocument({source: 'possible-sticker.png'}, extra)
 }
 
 bot.action('add-sticker', async ctx => {
