@@ -44,7 +44,7 @@ bot.action('add-sticker', async ctx => {
 
   return Promise.all([
     ctx.editMessageReplyMarkup(),
-    ctx.reply('Here is your new sticker. Your sticker set will be up to date within an hour.', Extra.inReplyTo(stickerMessage.message_id)),
+    ctx.reply('Here is your new sticker.\n\n⚠️ Your sticker set will be up to date within an hour.', Extra.inReplyTo(stickerMessage.message_id)),
     ctx.answerCbQuery()
   ])
 })
