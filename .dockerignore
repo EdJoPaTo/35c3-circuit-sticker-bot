@@ -3,6 +3,7 @@
 **/*.test.js
 botfather-settings
 Dockerfile
+LICENSE
 node_modules
 
 # botfiles
