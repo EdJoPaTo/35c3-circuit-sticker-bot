@@ -3,7 +3,7 @@
   "license": "GPL-3.0",
   "main": "index.js",
   "engines": {
-    "node": ">=11"
+    "node": ">=12"
   },
   "scripts": {
     "start": "node index.js",
