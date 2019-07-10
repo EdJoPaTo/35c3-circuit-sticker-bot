@@ -7,6 +7,6 @@ LICENSE
 node_modules
 
 # botfiles
-token.txt
+bot-token.txt
 output.svg
 possible-sticker.png

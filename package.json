@@ -9,10 +9,6 @@
     "start": "node index.js",
     "test": "xo"
   },
-  "config": {
-    "tokenpath": "/run/secrets/35c3memoriesbot-token.txt",
-    "tokenpathdebug": "token.txt"
-  },
   "dependencies": {
     "paper-jsdom-canvas": "^0.12.0",
     "telegraf": "^3.25.5"

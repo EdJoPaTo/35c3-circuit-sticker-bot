@@ -1,4 +1,4 @@
-const fs = require('fs')
+const {existsSync, readFileSync} = require('fs')
 const Telegraf = require('telegraf')
 
 const stickers = require('./lib/stickers')
@@ -9,8 +9,8 @@ const {Extra} = Telegraf
 
 const stickerApiWarning = '\n\n⚠️ The Telegram Sticker API seems slow sometimes. The official documentation contains "wait up to an hour".'
 
-const tokenFilePath = process.env.NODE_ENV === 'production' ? process.env.npm_package_config_tokenpath : process.env.npm_package_config_tokenpathdebug
-const token = fs.readFileSync(tokenFilePath, 'utf8').trim()
+const tokenFilePath = existsSync('/run/secrets') ? '/run/secrets/bot-token.txt' : 'bot-token.txt'
+const token = readFileSync(tokenFilePath, 'utf8').trim()
 const bot = new Telegraf(token)
 
 if (process.env.NODE_ENV !== 'production') {
