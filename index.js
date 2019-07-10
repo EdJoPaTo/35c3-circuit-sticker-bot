@@ -69,6 +69,7 @@ bot.command('start', async ctx => {
   } else {
     text += 'You already have your own sticker set.'
   }
+
   text += '\n\n' + helpText()
 
   return ctx.reply(text, extra)
