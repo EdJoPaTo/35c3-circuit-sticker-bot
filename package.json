@@ -19,6 +19,9 @@
   "xo": {
     "space": true,
     "semicolon": false,
+    "ignores": [
+      "lib/memories.js"
+    ],
     "overrides": [
       {
         "files": [
