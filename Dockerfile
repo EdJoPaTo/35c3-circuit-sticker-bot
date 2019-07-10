@@ -1,4 +1,4 @@
-FROM node:11-stretch
+FROM node:12-stretch
 WORKDIR /app
 
 ENV NODE_ENV=production
