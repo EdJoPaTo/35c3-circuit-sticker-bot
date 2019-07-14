@@ -3,7 +3,7 @@ WORKDIR /app
 
 ENV NODE_ENV=production
 
-RUN apt-get update && apt-get upgrade -y && apt-get install -y inkscape
+RUN apt-get update && apt-get install -y --no-install-recommends inkscape && rm -rf /var/lib/apt/lists/*
 ADD *.ttf /usr/share/fonts/ttf/
 
 ADD package.json package-lock.json ./
