@@ -1,4 +1,4 @@
-FROM node:12-stretch
+FROM node:12-buster
 WORKDIR /app
 
 ENV NODE_ENV=production
@@ -10,4 +10,4 @@ ADD package.json package-lock.json ./
 RUN npm ci
 
 ADD . .
-CMD node index.js
+CMD [ "/usr/local/bin/node", "index.js" ]
